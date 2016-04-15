@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="f21e307f-cc4a-4a87-9b01-39d4c3424367" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="API Demo Test" searchProperties="true" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="f21e307f-cc4a-4a87-9b01-39d4c3424367fileName">API-Demo-Test</con:setting></con:settings><con:testStep type="restrequest" name="get -Chan-Month" id="3e92e358-6ee7-4bd3-be12-3243981e0d2a"><con:settings/><con:config service="bvb-pmt-template" resourcePath="/bvb-aggregate-api/1.0/aggregate/party/{origPartyId}/currency/{origCurCode}/channel/{channel}/monthly" methodName="get" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="get -Chan-Month" id="d7d275d0-1d03-43f8-9d66-a62a28511a46" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Accept" value="application/json" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://bvbsit1app4-core-aggr.elasticbeanstalk.com</con:endpoint><con:request/><con:originalUri>http://bvbsit1app4-core-aggr.elasticbeanstalk.com/bvb-aggregate-api/1.0/aggregate/party/9cd09c25-132c-4d4c-81c5-95edc338af2c/currency/ZAR/channel/USSD/monthly</con:originalUri><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="api-transaction-timestamp" value="2015-08-18T06:36:40.000Z"/>
+  <con:entry key="origPartyId" value="9cd09c25-132c-4d4c-81c5-95edc338af2c"/>
+  <con:entry key="api-organisation" value="bvb"/>
+  <con:entry key="api-message-timestamp" value="2015-08-18T06:36:40.000Z"/>
+  <con:entry key="origCurCode" value="ZAR"/>
+  <con:entry key="api-message-id" value="f47ac10b-58cc-4372-a567-0e02b2c3d479"/>
+  <con:entry key="api-transaction-id" value="f47ac10b-58cc-4372-a567-0e02b2c3d479"/>
+  <con:entry key="api-country" value="za"/>
+  <con:entry key="channel" value="USSD"/>
+  <con:entry key="api-lang" value="en"/>
+</con:parameters></con:restRequest></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase>
